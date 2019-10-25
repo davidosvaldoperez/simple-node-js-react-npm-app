@@ -9,9 +9,15 @@ pipeline {
         pollSCM('*/2 * * * *') 
     }
     stages {
-        stage('Build') { 
+        stage('Compilar') { 
             steps {
                 sh 'npm install' 
+                sh 'npm build'
+            }
+        }
+        stage('Testear'){
+            steps {
+                sh 'npm test'
             }
         }
     }
