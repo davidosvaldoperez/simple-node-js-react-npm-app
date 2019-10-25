@@ -13,8 +13,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <img src="https://ep01.epimg.net/elpais/imagenes/2011/03/29/actualidad/1301381333_850215_0000000000_noticia_normal.jpg"/>
       </div>
-      <img src="https://ep01.epimg.net/elpais/imagenes/2011/03/29/actualidad/1301381333_850215_0000000000_noticia_normal.jpg"/>
     );
   }
 }
