@@ -5,11 +5,14 @@ pipeline {
             args '-p 3004:3000' 
         }
     }
+    environment {
+        CI = 'true'
+    }
     triggers {
         pollSCM('*/2 * * * *') 
     }
     stages {
-        stage('Compilar') { 
+        stage('Build') { 
             steps {
                 sh 'npm install' 
                 sh 'npm build'
