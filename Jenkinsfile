@@ -5,6 +5,9 @@ pipeline {
             args '-p 3004:3000' 
         }
     }
+    triggers {
+        pollSCM('* * * * *') 
+    }
     stages {
         stage('Build') { 
             steps {
